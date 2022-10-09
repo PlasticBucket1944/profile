@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>profile</title>
+
+    <!-- ユーザー定義CSS -->
+    <style>
+      body {
+        background-color: #FAFAFA;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <!-- サブコンポーネント -->
+        <!-- 切り替えボタン -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- ナビゲーション -->
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <!-- ナビゲーションメニュー -->
+          <!-- 左側メニュー：トップページの各コンテンツへのリンク -->
+          <ul class="navbar-nav me-auto">
+            <li id="nav-about" class="nav-item active">
+              <a class="nav-link" href="javascript:void(0)">ごあいさつ</a>
+            </li>
+            <li id="nav-profile" class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">基本情報</a>
+            </li>
+            <li id="nav-history" class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">業務経歴</a>
+            </li>
+            <li id="nav-skill" class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">スキル</a>
+            </li>
+          </ul>
+          <!-- /ナビゲーションメニュー -->
+        </div>
+        <!-- /サブコンポーネント -->
+      </div>
+    </nav>
+    <!-- /ナビゲーションバー -->
+    
+    <div id="about">
+      <div class="container">
+        <p></p>
+        <h1>ごあいさつ</h1>
+        <p><br></p>
+
+        <div class="row">
+          <div class="col-12">
+            <p>当ページを回覧いただきありがとうございます。</p>
+            <p>
+              私は高知のSlerで4年半PG、SEとして働いており、主に自治体向けデスクトップアプリケーション(C#.NET)の開発・保守運用を行っていました。
+              <br>その他社内Webアプリケーション(ruby on rails)の開発、民間企業向けデスクトップアプリケーション(C#.NET)の保守経験があります。
+            </p>
+            <p>
+              私用でプログラミングする際は元々Javaが多かったのですが、
+              <br>近年はデスクトップアプリはC#、ウェブ系はRuby、TypeScriptを利用しています。
+              <br>最近はReact、Nestjs、Pythonあたりを勉強中。GoやRustも時間があったらやりたい。
+            </p>
+            <p>githubアカウントはこちら→　<a href="https://github.com/PlasticBucket1944">PlasticBucket1944</a></p>
+            <p>qiitaアカウントはこちら→　<a href="https://qiita.com/Orangina1050">Orangina1050</a></p>
+            <p>ポートフォリオ・・・というレベルでもありませんがReact、Nestjs+ TypeScriptで作ったTask管理アプリ→　<a id="show-portfolio" href="#">詳細</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="profile">
+      <div class="container">
+        <p></p>
+        <h1>基本情報</h1>
+        <p><br></p>
+
+        <div class="row" style="height: 4rem;">
+          <div class="col-2 text-light text-center d-flex justify-content-center align-items-center bg-secondary border border-secondary">
+            名前
+          </div>
+          <div class="col-8 d-flex align-items-center border border-bottom-0 border-secondary">
+            (非公開)
+          </div>
+        </div>
+        <div class="row" style="height: 4rem;">
+          <div class="col-2 text-light text-center d-flex justify-content-center align-items-center bg-secondary border border-secondary">
+            性別
+          </div>
+          <div class="col-8 d-flex align-items-center border border-bottom-0 border-secondary">
+            男
+          </div>
+        </div>
+        <div class="row" style="height: 4rem;">
+          <div class="col-2 text-light text-center d-flex justify-content-center align-items-center bg-secondary border border-secondary">
+            生年月日
+          </div>
+          <div class="col-8 d-flex align-items-center border border-bottom-0 border-secondary">
+            1995年11月2日(満26歳)
+          </div>
+        </div>
+        <div class="row" style="height: 4rem;">
+          <div class="col-2 text-light text-center d-flex justify-content-center align-items-center bg-secondary border border-secondary">
+            現住所
+          </div>
+          <div class="col-8 d-flex align-items-center border border-bottom-0 border-secondary">
+            高知県 高知市
+          </div>
+        </div>
+        <div class="row" style="height: 4rem;">
+          <div class="col-2 text-light text-center d-flex justify-content-center align-items-center bg-secondary border border-secondary">
+            学歴
+          </div>
+          <div class="col-8 d-flex align-items-center border border-bottom-0 border-secondary">
+            私立大学 理工学部 電子情報工学科(2018年3月卒業)
+          </div>
+        </div>
+        <div class="row" style="height: 4rem;">
+          <div class="col-2 text-light text-center d-flex justify-content-center align-items-center bg-secondary border border-secondary">
+            資格
+          </div>
+          <div class="col-8 d-flex align-items-center border border-secondary">
+            普通自動車免許 基本情報
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="history">
+      <div class="container">
+        <p></p>
+        <h1>業務経歴(2022年9月末時点)</h1>
+        <p><br></p>
+
+        <div class="row">
+          <div class="col-2 text-light text-center d-flex justify-content-center align-items-center bg-secondary border border-secondary">
+            ~2018年3月
+          </div>
+          <div class="col-8 border border-bottom-0 border-secondary">
+            <strong>大学を卒業し、高知の中小IT企業に入社。</strong>
+            <br>なお大学時代はビックデータの解析と可視化、ディープラーニングのアルゴリズムについての研究を行っていました。
+            <br>主な環境：Java、R、MySQL
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 text-light text-center d-flex justify-content-center align-items-center bg-secondary border border-secondary">
+            2018年4月~2018年7月
+          </div>
+          <div class="col-8 border border-bottom-0 border-secondary">
+            <strong>民間企業向けスタンドアロン型デスクトップアプリケーションの改修を担当。</strong>
+            <br>不具合の調査及び実装を担当しました。
+            <br>主な環境：C#(.NET)、SQLServer、Git、Subversion
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 text-light text-center d-flex justify-content-center align-items-center bg-secondary border border-secondary">
+            2018年8月~2018年11月
+          </div>
+          <div class="col-8 border border-bottom-0 border-secondary">
+            <span class="text-black-50"><del>偉い人の思い付きで</del></span><strong>某プログラミングスクールを受講。</strong>
+            <br>Webアプリケーションの開発、仕組み、構築方法について学ぶ。
+            <br>主な環境：Ruby(Ruby on Rails)、CSS/HTML、JavaScript、MySQL、Git、AWS
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 text-light text-center d-flex justify-content-center align-items-center bg-secondary border border-secondary">
+            2018年12月~2019年3月
+          </div>
+          <div class="col-8 border border-bottom-0 border-secondary">
+            <strong>社内Webアプリケーションの設計、開発を担当。</strong>
+            <br>主に設計、フロントエンド実装、バックエンド実装、データ移行用VBAScript作成を行いました。
+            <br>主な環境：Ruby(Ruby on Rails)、CSS/HTML、JavaScript、VBA、PostgreSQL、Git
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 text-light text-center d-flex justify-content-center align-items-center bg-secondary border border-secondary">
+            2019年4月~2020年3月
+          </div>
+          <div class="col-8 border border-bottom-0 border-secondary">
+            <strong>自治体向けデスクトップアプリケーションの開発を担当。</strong>
+            <br>クライアントサーバー方式のアプリケーションで、主に実装を担当。
+            <br>主な環境：C#(.NET)、ORACLE、Subversion
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 text-light text-center d-flex justify-content-center align-items-center bg-secondary border border-secondary">
+            2020年4月~2022年9月
+          </div>
+          <div class="col-8 border border-secondary">
+            <strong>自治体向けデスクトップアプリケーションの保守・開発を担当。</strong>
+            <br>保守作業、開発、導入、ヘルプデスク、その他御用聞きなど一通りのことを担当。
+            <br>その他保守環境の整備、自動テストツールの作成など。
+            <br>主な環境：C#(.NET)、VBA、Python、ORACLE、Subversion、IIS
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skill">
+      <div class="container">
+        <p></p>
+        <h1>スキル一覧(2022年9月末時点)</h1>
+        <h5>業務での利用月数、★は業務以外での利用、学習経験がある場合</h5>
+        <p><br></p>
+
+        <h3 class="mb-4">言語</h3>
+
+        <div class="row">
+          <!-- カラム01 -->
+          <!-- カードの枠：card -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <!-- ガターを削除 -->
+            <div class="row g-0">
+              <!-- mdブレイクポイントで水平に -->
+              <div class="col-md-4">
+                <!-- カード画像 -->
+                <img src="./img/CSharp.png" alt="..." style="width: 180px; height: 180px;">
+              </div>
+              <div class="col-md-8">
+                <!-- カードの本文 -->
+                <div class="card-body">
+                  <h3 class="card-title">C#/.NET</h3>
+                  <div class="progress" style="height: 30px; font-size: 22px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%; height: 30px;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                      45カ月
+                    </div>
+                    ★
+                  </div>
+                  <p class="card-text">デスクトップアプリケーションの作成、帳票出力、<br>SQL発行など一通りの事はできます。<br>主なバージョンはC#:3~5、.NET:3.5 ちょっと古い...</p>
+                  <p class="card-text">最近のバージョンに関しては趣味の範囲で利用。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- カラム02 -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/Excel.png" alt="..." style="width: 180px; height: 180px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">EXCEL/VBA</h3>
+                  <div class="progress" style="height: 30px; font-size: 22px;">
+                    <div class="progress-bar" role="progressbar" style="width: 14%; height: 30px;" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  　　　　7カ月
+                  </div>
+                  <p class="card-text">計算式や関数の利用、<br>VBAを利用した画面の作成ができます。</p>
+                  <p class="card-text">バージョンはExcel2003～Excel2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- カラム01 -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/HTML-CSS.png" alt="..." style="width: 180px; height: 180px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">HTML/CSS</h3>
+                  <div class="progress" style="height: 30px; font-size: 22px;">
+                    <div class="progress-bar" role="progressbar" style="width: 8%; height: 30px;" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  ★　　　　4カ月
+                  </div>
+                  <p class="card-text">簡単な画面の作成、既存コード解読ができます。<br>実務ではHTML5/CSS3を利用していました。</p>
+                  <p class="card-text">デザインに関してはBootStrapに頼りっきりです!!!!!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- カラム02 -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/JavaScript.png" alt="..." style="width: 180px; height: 180px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">JavaScript</h3>
+                  <div class="progress" style="height: 30px; font-size: 22px;">
+                    <div class="progress-bar" role="progressbar" style="width: 8%; height: 30px;" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  ★　　　　4カ月
+                  </div>
+                  <p class="card-text">基本的なイベントの作成、非同期処理、
+                    <br>既存コード解読ができます。
+                    <br>また実務経験はありませんが、React、Nestjsは
+                    <br>todoアプリレベルの開発、デプロイした経験があります。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- カラム01 -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/Ruby.png" alt="..." style="width: 180px; height: 180px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">Ruby/Ruby on Rails</h3>
+                  <div class="progress" style="height: 30px; font-size: 22px;">
+                    <div class="progress-bar" role="progressbar" style="width: 8%; height: 30px;" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  ★　　　　4カ月
+                  </div>
+                  <p class="card-text">簡単なアプリケーションの作成、既存コード解読ができます。</p>
+                  <p class="card-text">実務ではRails5を利用していました。<br>自己学習ではRails6を利用しています。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- カラム02 -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/Python.png" alt="..." style="width: 180px; height: 180px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">Python</h3>
+                  <div class="progress" style="height: 30px; font-size: 22px;">
+                    <div class="progress-bar" role="progressbar" style="width: 4%; height: 30px;" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  　　　　　　2カ月
+                  </div>
+                  <p class="card-text">
+                    SikulixというRPAツールを利用する際学びました。
+                    <br>簡単なアプリケーションの作成、既存コード解読ができます。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- カラム01 -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/Java.png" alt="..." style="width: 180px; height: 180px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">Java</h3>
+                  <div class="progress" style="height: 30px; font-size: 22px;">
+                    <div class="progress-bar" role="progressbar" style="width: 0%; height: 30px;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  ★
+                  </div>
+                  <p class="card-text">
+                    実務経験はありませんが、<br>学生時代及び社会人になってしばらくは<br>私用ではこの言語を利用していました。
+                    <br>最近はC#やRailsを利用していますが、<br>基本的な構文なら理解できると思います。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- カラム02 -->
+          <div class="card mb-3" style="max-width: 540px;">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container">
+        <h3 class="mb-4">データベース</h3>
+
+        <div class="row">
+          <!-- カラム01 -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/oracle.png" alt="..." style="width: 180px; height: 180px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">ORACLE</h3>
+                  <div class="progress" style="height: 30px; font-size: 22px;">
+                    <div class="progress-bar" role="progressbar" style="width: 84%; height: 30px;" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">
+                    42カ月
+                    </div>
+                  </div>
+                  <p class="card-text">
+                    一通りのオブジェクト操作、PL/SQL文の作成ができます。
+                    <br>バージョンは主に11g、19cの経験があります。
+                  </p>
+                  <p class="card-text">可視化ツールはObject Browserを利用していました。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- カラム02 -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/postgresql.png" alt="..." style="width: 180px; height: 180px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">PostgreSQL</h3>
+                  <div class="progress" style="height: 30px; font-size: 22px;">
+                    <div class="progress-bar" role="progressbar" style="width: 8%; height: 30px;" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  　　　　　4カ月
+                  </div>
+                  <p class="card-text">基本的なSQL文の発行ができます。</p>
+                  <p class="card-text">可視化ツールはA5:SQL Mk-2を利用していました。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- カラム01 -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/SQLServer.png" alt="..." style="width: 180px; height: 180px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">SQLServer</h3>
+                  <div class="progress" style="height: 30px; font-size: 22px;">
+                    <div class="progress-bar" role="progressbar" style="width: 6%; height: 30px;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  ★　　　　3カ月
+                  </div>
+                  <p class="card-text">基本的なSQL文の発行ができます。</p>
+                  <p class="card-text">可視化ツールはSQL Server Management Studio (SSMS)を利用していました。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- カラム02 -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/mysql.png" alt="..." style="width: 180px; height: 180px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">MySQL</h3>
+                  <div class="progress" style="height: 30px; font-size: 22px;">
+                    <div class="progress-bar" role="progressbar" style="width: 0%; height: 30px;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  ★
+                  </div>
+                  <p class="card-text">
+                    実務経験はありませんが、<br>私用では主にこのDBを利用しています。
+                    <br>基本的なSQL文の発行ができます。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="container">
+        <h3 class="mb-4">その他ツール</h3>
+
+        <div class="row">
+          <!-- カラム01 -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/Subversion.png" alt="..." style="width: 180px; height: 180px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">Subversion</h3>
+                  <div class="progress" style="height: 30px; font-size: 22px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%; height: 30px;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                    45カ月
+                    </div>
+                  </div>
+                  <p class="card-text">
+                    一通りのコマンド、チーム開発の経験があります。
+                    <br>主にTortoiseSVNを利用しての作業を行っています。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- カラム02 -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/Git.png" alt="..." style="width: 180px; height: 180px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">Git</h3>
+                  <div class="progress" style="height: 30px; font-size: 22px;">
+                    <div class="progress-bar" role="progressbar" style="width: 8%; height: 30px;" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  ★　　　　7カ月
+                  </div>
+                  <p class="card-text">
+                    私用での個人使用が主ですが、チーム開発経験もあります。
+                    <br>基本的なコマンド、リモートとのやり取りができます。
+                    <br>Github Desktopの利用経験もありますが、
+                    <br>主にコマンドラインでの利用が多いです。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <!-- カラム01 -->
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./img/docker.png" alt="..." style="width: 180px; height: 180px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">Docker</h3>
+                  <div class="progress" style="height: 30px; font-size: 22px;">
+                    <div class="progress-bar" role="progressbar" style="width: 0%; height: 30px;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                    ★
+                  </div>
+                  <p class="card-text">
+                    実務経験はありませんが、私用でちょこちょこ利用しています。
+                    <br>主にコマンド上での利用が多いですが、
+                    <br>Windows環境ではDocker Desktopを利用しています。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <p></p>
+        <h1>ポートフォリオについて</h1>
+        <p><br></p>
+        <img src="./img/img001.png" alt="...">
+
+        <div class="row">
+          <div class="col-12">
+            <h5>概要</h5>
+            <p>基本的なCRUDができるタスク管理アプリ</p>
+            <p>リンクはこちら(サーバー側の立ち上がりに30秒ほどかかります)→　<a href="https://plasticbucket1944.github.io/react-task-app/">Task App</a></p>
+            <p>TypeScriptを勉強する過程で作ったToDoクラスのアプリなので正直ポートフォリオというほどでもありませんが・・・</p>
+            <p>
+              クライアント側はReact、サーバー側はNestjsでTypeScriptを利用して作成しました。
+              <br>デプロイはクライアント側はGitHub Pages、サーバー側はrender.comの無料サーバー&DBを利用しています。
+            </p>
+            <h5>クライアント側 開発環境</h5>
+            <p>
+              typescript : 4.7.4
+              <br>react : 18.2.0
+              <p>リポジトリはこちら→　<a href="https://github.com/PlasticBucket1944/react-task-app">Github</a></p>
+            </p>
+            <h5>サーバー側 開発環境</h5>
+            <p>
+              typescript : 4.3.5
+              <br>nestjs : 8.2.6
+              <br>PostgreSQL : 14.2  
+              <br>pg : 8.7.3  
+              <br>@nestjs/typeorm : 8.0.2  
+              <br>typeorm : 0.2.45  
+              <p>リポジトリはこちら→　<a href="https://github.com/PlasticBucket1944/nestjs-task-app">Github</a></p>
+            </p>
+            <h5>開発の動機、苦労した事とか</h5>
+            <li>TypeScript勉強してなんか作りたくなった</li>
+            <li>rails、LaravelのフルスタックWebフレームワークは使ったことがあったが、最近主流のマイクロサービス形式でクラサバを分けたアプリを作りたくなった</li>
+            <li>Reactは昔チュートリアルをやっただけ、Nestjsは素人</li>
+            <li>特にNestjsは日本語の情報が少なかったので苦労した、結局公式のドキュメントを読みつつUdemyの講座で勉強した</li>
+            <li>デプロイもHerokuにしようとしたら無料枠がなくなり、急遽render.comにすることに</li>
+            <li>さらに情報が少なくて苦労した、結局クライアント側(こっちはGithub Pages)もサーバー側も英語の記事を漁ってなんとかなった</li>
+            <li>一通りデプロイまで経験できて良い機会だった、が、肝心のアプリの内容がしょぼい・・・(´・ω・｀)</li>
+            <p></p>
+            <p><br></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ユーザー定義script -->
+    <script>
+      window.addEventListener('load', function() {
+        document.getElementById('about').hidden = false;
+        document.getElementById('profile').hidden = true;
+        document.getElementById('history').hidden = true;
+        document.getElementById('skill').hidden = true;
+        document.getElementById('portfolio').hidden = true;
+      });
+
+      document.getElementById("nav-about").addEventListener("click", function() {
+        document.getElementById('about').hidden = false;
+        document.getElementById('profile').hidden = true;
+        document.getElementById('history').hidden = true;
+        document.getElementById('skill').hidden = true;
+        document.getElementById('portfolio').hidden = true;
+      });
+
+      document.getElementById("nav-profile").addEventListener("click", function() {
+        document.getElementById('about').hidden = true;
+        document.getElementById('profile').hidden = false;
+        document.getElementById('history').hidden = true;
+        document.getElementById('skill').hidden = true;
+        document.getElementById('portfolio').hidden = true;
+      });
+
+      document.getElementById("nav-history").addEventListener("click", function() {
+        document.getElementById('about').hidden = true;
+        document.getElementById('profile').hidden = true;
+        document.getElementById('history').hidden = false;
+        document.getElementById('skill').hidden = true;
+        document.getElementById('portfolio').hidden = true;
+      });
+
+      document.getElementById("nav-skill").addEventListener("click", function() {
+        document.getElementById('about').hidden = true;
+        document.getElementById('profile').hidden = true;
+        document.getElementById('history').hidden = true;
+        document.getElementById('skill').hidden = false;
+        document.getElementById('portfolio').hidden = true;
+      });
+
+      document.getElementById("show-portfolio").addEventListener("click", function() {
+        event.preventDefault(); // aタグの画面遷移を無効にする
+        document.getElementById('about').hidden = true;
+        document.getElementById('profile').hidden = true;
+        document.getElementById('history').hidden = true;
+        document.getElementById('skill').hidden = true;
+        document.getElementById('portfolio').hidden = false;
+      });
+    </script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
